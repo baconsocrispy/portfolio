@@ -1,0 +1,16 @@
+.nav-bar  {
+  background-color: seagreen;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  font-family: futura;
+  
+}
+.nav-bar a {
+  display: inline-block;
+  padding: 5px;
+}
+.nav-bar a:hover  {
+  background-color: darkseagreen;
+}
