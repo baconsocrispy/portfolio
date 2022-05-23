@@ -1,16 +1,55 @@
+body  {
+  font-family: manrope;
+}
+h1  {
+  font-size: 6em;
+  height: auto;
+}
+h4  {
+  font-size: 2em;
+}
+/* nav */
 .nav-bar  {
-  background-color: seagreen;
   position: fixed;
+  display: flex;
+  justify-content: center;
   width: 100%;
-  top: 0;
+  top: 5px;
   left: 0;
-  font-family: futura;
-  
+  font-size: 1em;
+  z-index: 100;
 }
 .nav-bar a {
   display: inline-block;
   padding: 5px;
+  margin: 5px;
+  opacity: .8;
+  text-decoration: none;
+  text-align: center;
+  color: rgba(82, 145, 184, .7);
+  background: rgba(164, 225, 243, 0.7);
+  border-radius: 10%;
 }
 .nav-bar a:hover  {
-  background-color: darkseagreen;
+  background-color: rgba(82, 145, 184, .7);
+  color: white;
 }
+
+/* home */
+.text-overlay {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: rgba(82, 145, 184, .7);
+  z-index: 99;
+}
+.hero-video {
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
