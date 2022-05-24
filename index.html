@@ -2,40 +2,120 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Carter Bacon</title>
+    <title>&#129363; Carter Bacon</title>
     <link rel="stylesheet" href="./css/portfolio.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
-    <!-- add viewport meta -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope:wght@200..900">
+    <meta name="viewport" content="width=device-width" />
   </head>
   <body>
     <!-- nav -->
     <section>
       <nav class="nav-bar">
-        <a href="#home">Home</a>
-        <a href="#">About</a>
-        <a href="#">Github</a>
-        <a href="#">Contact</a>
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#portfolio">portfolio</a>
+        <a href="#contact">contact</a>
       </nav>
     </section>
 
     <!-- home -->
-    <section id="home" class="container">
-      <div class="text-overlay">
-        <h1>Carter's Code</h1>
-        <h4 class="welcome-message">
-          <!-- Building something out of nothing -->
-        </h4>
-      </div>
-      <div class="hero-video">
+    <section id="home">
+      <div class="video">
         <video autoplay muted loop>
           <source src="./img/vid/pexels-mikhail-nilov-7456768.mp4"
         </video>
       </div>
+      <div class="text-overlay">
+        <h1>carter\'s_code</h1>
+        <h4>
+         full-stack software development
+        </h4>
+      </div>
     </section>
+    
     <!-- about -->
+    <section id="about">
+      <div class="row">
+        <div class="col_img">
+          <img src="./img/bg_ice.jpeg" alt="ice">
+          <div class="col-overlay">
+            <h4>about</h4>
+          </div>
+        </div>
+        <div class="col_text">
+          <h2 class="name">&#129363; Carter Bacon&#129363;</h2>
+          <h2>
+            I'm a full stack software developer
+            based in Los Angeles, CA. After a 12 year
+            career working in film distribution, I 
+            found myself looking for a change of 
+            direction. Inspired by the unusual joy I
+            took in creating complex Excel models and using data
+            to guide strategic decision-making, I 
+            completed the software developer bootcamp at 
+            The Tech Academy in 2022. Through the course I learned 
+            the fundamentals of several languages (HTML, CSS, 
+            JavaScript, Python, C#, SQL) and frameworks 
+            (Django, .NET, Bootstrap), among other technologies. I
+            love making things and enjoy helping people find 
+            creative solutions to complex problems.
+          </h2>
+        </div>
+      </div>
+    </section>
 
-    <!-- form -->
+    <!-- portfolio -->
+    <section id="portfolio">
+      <div class="row">
+        <div class="col_text">
+          <br>
+          <br>
+          <br>
+          <h2>Please visit my github page
+            to see a selection 
+            <br>of my past projects:
+          </h2>
+          <h2><a href="https://github.com/baconsocrispy" target="new">
+            baconsocrispy
+          </a></h2>
+        </div>
+        <div class="col_img">
+          <img src="./img/frozen.jpg" alt="frozen">
+          <div class="col-overlay">
+            <h4>portfolio</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="row">
+        <div class="col_img">
+          <img src="./img/abstract.jpg" alt="frozen">
+          <div class="col-overlay">
+            <h4>contact</h4>
+          </div>
+        </div>
+        <div class="col_form">
+          <form action="https://formspree.io/f/mpzbbzab" method="POST">
+            <label>Name</label>
+              <input type="text">
+            <label>Email</label>
+              <input type="text" name="email" id="email">
+            <label>Message</label>
+              <input type="text" name="message" id="message">
+              <input type="submit" value="submit">
+          </form>
+        </div>
+      </div>  
+    </section>
 
     <!-- footer -->
+    <section>
+      <footer class="footer-bar">
+        <p>&copy; 2022 Carter Bacon</p>
+      </footer>
+    </section>
   </body>
 </html>
