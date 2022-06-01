@@ -5,13 +5,14 @@
     <title>&#129363; Carter Bacon</title>
     <link rel="stylesheet" href="./css/portfolio.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope:wght@200..900">
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width">
   </head>
   <body>
     <!-- nav -->
     <section>
       <nav class="nav-bar">
         <a href="#home">home</a>
+        <a href="#slideshow">skills</a>
         <a href="#about">about</a>
         <a href="#portfolio">portfolio</a>
         <a href="#contact">contact</a>
@@ -32,7 +33,52 @@
         </h4>
       </div>
     </section>
+
+    <!-- contact -->
+    <section id="contact">
+      <form action="https://formspree.io/f/mpzbbzab" method="POST">
+        <label>name</label>
+        <input type="text" required>
+        <label>email</label>
+        <input type="text" name="email" id="email" required>
+        <label>message</label>
+        <input type="text" name="message" id="message">
+        <input class="form-btn" type="submit" value="submit">
+        <button class="form-btn" type="submit" onclick="closeContact()">close</button>
+      </form>
+    </section>
+    <button id="contact-btn" type="submit" onclick="openContact()">contact</button>
     
+    <!-- skills slideshow -->
+    <section id="slideshow">
+      <div class="slideshow-container">
+        <!-- slide 1 -->
+        <div class="slides">
+          <img src="./img/slides/PNG/html-css-js.png" alt="HTML, CSS, JavaScript Logos">
+          <p class="caption">HTML, CSS, JavaScript</p>
+        </div>
+        <!-- slide 2 -->
+        <div class="slides">
+          <img src="./img/slides/PNG/python.png" alt="Python Logo">
+          <p class="caption">Python</p>
+        </div>
+        <!-- slide 3 -->
+        <div class="slides">
+          <img src="./img/slides/PNG/dotnet-mvc-csharp_1.png" alt=".NET, C# Logos">
+          <p class="caption">C#, ASP.NET, .NET Framework, .NET MVC</p>
+        </div>
+        <!-- slide 4 -->
+        <div class="slides">
+          <img src="./img/slides/PNG/sql-db.png" alt="Database Logos">
+          <p class="caption">SQL & RDBMS</p>
+        </div>
+
+        <button class="prev" onclick="advanceSlides(-1)">&#8592;</button>
+        <button class="next" onclick="advanceSlides(1)">&#8594;</button>
+      </div>
+    </section>
+
+    </section>
     <!-- about -->
     <section id="about">
       <div class="row">
@@ -87,35 +133,13 @@
         </div>
       </div>
     </section>
-
-    <!-- contact -->
-    <section id="contact">
-      <div class="row">
-        <div class="col_img">
-          <img src="./img/abstract.jpg" alt="frozen">
-          <div class="col-overlay">
-            <h4>contact</h4>
-          </div>
-        </div>
-        <div class="col_form">
-          <form action="https://formspree.io/f/mpzbbzab" method="POST">
-            <label>Name</label>
-              <input type="text">
-            <label>Email</label>
-              <input type="text" name="email" id="email">
-            <label>Message</label>
-              <input type="text" name="message" id="message">
-              <input type="submit" value="submit">
-          </form>
-        </div>
-      </div>  
-    </section>
-
+    
     <!-- footer -->
     <section>
       <footer class="footer-bar">
         <p>&copy; 2022 Carter Bacon</p>
       </footer>
     </section>
+    <script src="./js/main.js"></script>
   </body>
 </html>
